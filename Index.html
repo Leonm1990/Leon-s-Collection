@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon's Collection</title>
+    <link id="theme" rel="stylesheet" href="style-light.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Leon’s Collection Logo" class="logo">
+        <button id="menu-button">
+            <img src="assets/menu-icon.png" alt="Menu">
+        </button>
+    </header>
+
+    <nav id="side-menu" class="hidden">
+        <ul>
+            <li onclick="navigate('consoles')">Consoles</li>
+            <li onclick="navigate('games')">Games</li>
+            <li onclick="navigate('accessories')">Accessories</li>
+            <li onclick="navigate('magic')">Magic Cards</li>
+            <li onclick="navigate('wishlist')">Wishlist</li>
+            <li onclick="uploadExcel()">Upload Excel</li>
+            <li onclick="openFeedback()">Send Feedback</li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h1>Welcome, Leon!</h1>
+        <div class="button-grid">
+            <button onclick="navigate('consoles')">Consoles</button>
+            <button onclick="navigate('games')">Games</button>
+            <button onclick="navigate('accessories')">Accessories</button>
+            <button onclick="navigate('magic')">Magic Cards</button>
+            <button onclick="navigate('wishlist')">Wishlist</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
